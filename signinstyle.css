@@ -1,0 +1,46 @@
+body{
+	background:url(backg.jpeg);
+	background-size:100%;
+
+}
+
+
+#nav{
+	margin-top: 50px;
+	padding-top:20px;
+	padding-left: 40px;
+	font-size: 20px;
+	background:orange;
+	width:300px;
+	height:400px;
+	margin:auto;
+	border-radius:10px;
+	opacity:.8;
+	text-align:center;
+}
+#nav input{
+	margin-top: 30px;
+	margin-right: 20px;
+	width: 200px;
+	height: 40px;
+	font-size:20px;
+	border-radius: 5px;
+	font-style:italic;
+}
+#in1{
+	padding-left: 80px;
+	font-style: italic;
+	color: white;
+	
+	
+}
+#in1 input{
+	font-style: italic;
+
+}
+#in1 input[type="submit"]:hover{
+
+	background: white;
+	color:blue;
+	
+}
