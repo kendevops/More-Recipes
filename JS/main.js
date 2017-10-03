@@ -1,19 +1,12 @@
 $(document).ready(function() {
-	$('.nav-trigger').click(function() {
-		$('.side-nav').toggleClass('visible');
-	});
+    $('.nav ul li:first').addClass('active');
+    $('.tab-content:not(:first)').hide();
+    $('.nav ul li a').click(function(event) {
+        event.preventDefault();
+        var content = $(this).attr('href');
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+        $(content).show();
+        $(content).siblings('.tab-content').hide();
+    });
 });
-function main() {
-  $('.side-nav').hide();
-  $('.side-nav').fadeIn(1000);
-  
-  $('#myUL').hide();
-  
-  $('.fa-book').on('click', function() {
-		$('.side-nav').next().slideToggle(400);
-    $(this).toggleClass('active');
-    $(this).text('');
-	});
-}
-
-$(document).ready(main);
