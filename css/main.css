@@ -164,6 +164,15 @@ span:after {
     background-color: #fff;
 }
 
+.side-nav ul li.real:after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
 .side-nav ul li a {
     color: #fff;
     display: block;

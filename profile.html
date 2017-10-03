@@ -6,7 +6,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marmelad|Courgette">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,110 +22,105 @@
                     <a class="brand-logo center truncate">More-Recipes</a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><span class="chip clickable">2</span></li>
-                        <li><a class="dropdown-button" data-activates="dropdown2">Larrystone<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><span class="chip clickable">1</span></li>
+                        <li><a class="dropdown-button" data-activates="dropdown2">SIGNOUT<i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
-                        <li><a href="#">Notifications <span class="chip">2</span></a></li>
-                        <li><a href="profile.html">My Profile</a>
+                        <li><a href="#">Notifications <span class="chip">1</span></a></li>
                             <li><a href="index.html">Sign Out</a></li>
                     </ul>
                 </div>
 
-                <div>
+                <div id="info">
                     <ul>
-                        <li><a class="active" href="dashboard.html">Home</a></li>
-                        <li><a href="my_recipes.html">My Recipes</a></li>
-                        <li><a href="my_favs.html">My Favorites</a></li>
+                        <li style="font-size:25px"><a href="Home.html">My Recipes</a></li>
+                        <li><a href="favourite.html">My Favorites</a></li>
                     </ul>
                 </div>
         </div>
         <ul id="dropdown2" class="dropdown-content">
-            <li><a href="profile.html">My Profile</a></li>
             <li><a href="index.html">Sign Out</a></li>
         </ul>
-        </nav>
+        </nav><br>
 
-        <!-- Slider Sections-->
-        <div class="push-content-down load hide grey lighten-5">
-
-            <!-- Profile Section-->
-            <div id="profile" class="recipes grey lighten-5" class="row">
-                <div class="row">
-                    <div class="col s12 m7">
-                        <div class="card">
-                            <ul class="collection with-header">
-                                <li class="collection-header grey lighten-4">
-                                    <h5>Basic Information</h5>
-                                </li>
-                                <li class="collection-item">
-                                    <div>
-                                        <h6 class="green-text">Name</h6>
-                                        <input value="Lawal Lanre Emmanuel" type="text" name="name" id="name" />
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <h6 class="green-text">Username</h6>
-                                    <input value="larrystone" type="text" name="username" id="name" />
-                                </li>
-                                <li class="collection-item">
-                                    <h6 class="green-text">Email</a>
-                                    </h6>
-                                    <h6>larrystone@gmail.com</h6>
-                                </li>
-                                <li class="collection-item">
-                                    <h6 class="green-text">Password</h6>
-                                    <input value="larrystone" type="password" name="password1" id="password1" />
-                                </li>
-                                <li class="collection-item">
-                                    <h6 class="green-text">Re-Enter Password</h6>
-                                    <input value="larrystone" type="password" name="password2" id="password2" />
-                                </li>
-                                <li class="collection-item center">
-                                    <button class="btn primary green lighten-2" id="save">Save Changes</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m5">
-                        <div class="card large">
-                            <ul class="collection with-header">
-                                <li class="collection-header grey lighten-4">
-                                    <h5>My Stats Chart</h5>
-                                </li>
-                                <div id="statsContainer" style="height: 300px; width: 100%;"></div>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </header>
-
-    <footer class="page-footer load green lighten-2 hide">
         <div class="container">
             <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">More-Recipes...</h5>
-                    <p class="grey-text text-lighten-4">An Andela Bootcamp LOS/26 project</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Project links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/larrystone/BC-26-More-Recipes">Github</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.pivotaltracker.com/n/projects/2096195">Pivotal Tracker</a></li>
-                    </ul>
-                </div>
+                 <h2>Your Profile</h2>
+                
+                
+               <div class="col-md-7 ">
+        
+        <div class="panel panel-default">
+          <div class="panel-heading">  <h4 >User Profile</h4></div>
+           <div class="panel-body">
+               
+            <div class="box box-info">
+                
+                    <div class="box-body">
+                             <div>
+                             <div  align="center"> <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive"> 
+                        
+                        <input id="profile-image-upload" class="hidden" type="file">
+        <div style="color:#999;" >click here to change profile image</div>
+                        <!--Upload Image Js And Css-->
+                             </div>
+                    </div><br>
+
+        <div class="col-sm-5 col-xs-6 title " >First Name:</div><div class="col-sm-7 col-xs-6 ">KENNETH</div>
+             <div class="clearfix"></div>
+        <div class="bot-border"></div>
+        
+        <div class="col-sm-5 col-xs-6 title " >Middle Name:</div><div class="col-sm-7">CHIBUZO</div>
+          <div class="clearfix"></div>
+        <div class="bot-border"></div>
+        
+        <div class="col-sm-5 col-xs-6 title " >Last Name:</div><div class="col-sm-7"> MICHAEL</div>
+          <div class="clearfix"></div>
+        <div class="bot-border"></div>
+        
+        <div class="col-sm-5 col-xs-6 title " >Date Of Birth:</div><div class="col-sm-7">5 OCT 1990</div>
+        
+          <div class="clearfix"></div>
+        <div class="bot-border"></div>
+        
+        <div class="col-sm-5 col-xs-6 title " >City:</div><div class="col-sm-7">PORT-HARCOURT</div>
+        
+         <div class="clearfix"></div>
+        <div class="bot-border"></div>
+        
+        <div class="col-sm-5 col-xs-6 title " >Email:</div><div class="col-sm-7">kenneth.michael@gmail.com</div>
+              
+        
+         <div class="clearfix"></div>
+        <div class="bot-border"></div>
+              <div class="col-sm-5 col-xs-6 title " >Nationality:</div><div class="col-sm-7">NIGERIAN</div>
+              
+        
+         <div class="clearfix"></div>
+        <div class="bot-border"></div>
+        
+        <div class="col-sm-5 col-xs-6 title " >Gender:</div><div class="col-sm-7">Male</div>
+        
+        
+                    <!-- /.box-body -->
+                  </div>
+                  <!-- /.box -->
+        
+                </div>          
+            </div> 
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Copyright © 2017 Lawal Lanre (Larrystone)
-            </div>
-        </div>
-    </footer>
+        </div> 
+        <script>
+            $(function() {
+  $('#profile-image1').on('click', function() {
+      $('#profile-image-upload').click();
+  });
+});       
+            </script>     
+     
+ </div>
+</div>
+
 
     <!--scripts includes-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
