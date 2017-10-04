@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "adminadmin",
+    "database": "recipe_development",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "admin",
+    "password": "adminadmin",
+    "database": "recipe_test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "opmmedia",
+    "password": "adminadmin",
+    "database": "recipe_production",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
