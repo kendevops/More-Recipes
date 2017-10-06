@@ -1,34 +1,32 @@
-<form>
-    <fieldset>
-        <legend>Ingredients:</legend>
-        <h1 align="center"><i>ADD INGREDIENTS</i></h1>
-        <ol>
-            <br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br>
-            <li><input type="text" name="Ingredient" value=""></li><br><br>
-            <input type="submit" value="Submit">
-        </ol>
-    </fieldset>
-</form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INGREDIENTS</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Ingredients:</legend>
+            <h1>ADD INGRIDENTS</h1>
+                <input type="text" placeholder="New item" />
+                <button id="add">Add</button>
+                <ol id="my"></ol>
+        </fieldset>
+    </body>
+<script type="text/javascript">
+    $(function() {
+    $("#add").on("click", function() {
+        var val = $("input").val();
+        if(val !== '') {
+            var elem = $("<li></li>").text(val);
+            $(elem).append("<button class='rem'>X</button>");
+            $("#mylist").append(elem);
+            $("input").val("");
+            $(".rem").on("click", function() {
+                $(this).parent().remove();
+            });
+        }
+    });
+});
+</script>
+</html>
