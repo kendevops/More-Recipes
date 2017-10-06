@@ -1,32 +1,104 @@
-<!Doctype html>
-
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Registation Form</title>
-    <link rel="stylesheet" type="text/css" href="./css/style3.css">
-</head>
-
+<title>More-Recipe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+p {font-size: 20px;}
+footer {font-size: 20px;}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./images/slider1.jpg");
+    min-height: 90%;
+    animation-duration: 3s;
+}
+#myNavbar {
+	float: right;
+ }
+ footer {
+  background: lightblue;
+  text-align: center;
+  padding: 10px;
+}
+</style>
 <body>
 
-    <div id="nav">
-        <strong>Registration Form</strong><br>
-        <form name='myForm'>
-            <input type="text" placeholder="Firstname" name="sname">
-            <input type="text" placeholder="Lastname" name="lname"><br/>
-            <input type="Email" placeholder="Enter Email" name="email"><br/>
-            <input type="number" placeholder="Mobile No." name="M no."><br/>
-            <input type="password" placeholder="password" name="password">
-            <input type="password" placeholder="Re-type Password" name="password"><br/>
-            <button class="btn btn-primary" type="submit">Register</button>
-        </form>
-        <form role="form" action="signin.html">
-            <button id='btn' class="btn1 btn-primary club" type="submit">Existing User</button>
-        </form>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="signin.html" class="w3-bar-item w3-button">Sign-In</a>
+    <a href="signup.html" class="w3-bar-item w3-button">Sign-Up</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">MORE<br>RECIPES</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>MORE<br>RECIPES</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">MAKE YOMMY FOODS WITH US</a></p>
+  </div>
+</header>
 
+<!-- Menu Container -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="./images/img4.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Socolent Bitterleaf Soup</h3>
+      <p>Made with Natural leaf and Good for the Body</p>
     </div>
+    <div class="w3-quarter">
+      <img src="./images/poriage.jpg" alt="Steak" style="width:100%">
+      <h3>Poriage-Yam</h3>
+      <p>We don't only teach you, we show you! Join us.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/egusi.jpg" alt="Cherries" style="width:100%">
+      <h3>Egusi Soup</h3>
+      <p>Read it, learn it and then cook it.</p>
+      <p>What else?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/tomato-stew.jpg" alt="tomato-stew" style="width:100%">
+      <h3>Tomato stew</h3>
+      <p>Tomato stew that waters the mouth just by seeing.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="./images/img7.jpeg" alt="Banga" style="width:100%">
+      <h3>Banga Stew</h3>
+      <p>Made from a palm fruit and made of nature.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/img6.jpg" alt="Salmon" style="width:100%">
+      <h3>Chicken Stew</h3>
+      <p>Taste of Chicken, Taste of freshness.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/chicken.jpg" alt="Sandwich" style="width:100%">
+      <h3>Chicken Soup</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="./images/fried-rice.jpg" alt="fried-rice" style="width:100%">
+      <h3>Fried-rice</h3>
+      <p>Fried for taste, and Sweetness.</p>
+    </div>
+  </div>
 
-
+<footer>Created by: ALADI KENNETH &copy; 2017.</footer>
 </body>
-
 </html>
