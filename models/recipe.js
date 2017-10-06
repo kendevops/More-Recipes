@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module.exports = (sequelize, DataTypes) => {
   const Recipe = sequelize.define('Recipe', {
     name: DataTypes.STRING,
@@ -23,3 +24,23 @@ module.exports = (sequelize, DataTypes) => {
 
   return Recipe;
 };
+=======
+
+'use strict';
+module.exports = (sequelize, DataTypes) => {
+    var Recipe = sequelize.define('Recipe', {
+        name: DataTypes.STRING,
+        votes: DataTypes.INTEGER
+    });
+
+    // Class Method
+    Recipe.associate = function (models) {
+        Recipe.hasMany(models.Ingredient, {as: 'Ingredients'});
+        Recipe.belongsTo(models.User, {onDelete: 'CASCADE'});
+        Recipe.hasMany(models.Review, {as: 'Reviews'});
+    };
+    return Recipe;
+}
+
+
+>>>>>>> Update on development

@@ -15,7 +15,11 @@ var Sequelize = require('sequelize');
 var info = {
     "revision": 1,
     "name": "update",
+<<<<<<< HEAD
     "created": "2017-10-02T15:12:26.432Z",
+=======
+    "created": "2017-10-04T18:05:04.488Z",
+>>>>>>> Update on development
     "comment": ""
 };
 
@@ -90,7 +94,11 @@ var migrationCommands = [{
                         "model": "Users",
                         "key": "id"
                     },
+<<<<<<< HEAD
                     "allowNull": false
+=======
+                    "allowNull": true
+>>>>>>> Update on development
                 }
             },
             {}
@@ -129,7 +137,11 @@ var migrationCommands = [{
                         "model": "Recipes",
                         "key": "id"
                     },
+<<<<<<< HEAD
                     "allowNull": false
+=======
+                    "allowNull": true
+>>>>>>> Update on development
                 }
             },
             {}
@@ -160,12 +172,20 @@ var migrationCommands = [{
                 "RecipeId": {
                     "type": Sequelize.INTEGER,
                     "onUpdate": "CASCADE",
+<<<<<<< HEAD
                     "onDelete": "CASCADE",
+=======
+                    "onDelete": "SET NULL",
+>>>>>>> Update on development
                     "references": {
                         "model": "Recipes",
                         "key": "id"
                     },
+<<<<<<< HEAD
                     "allowNull": false
+=======
+                    "allowNull": true
+>>>>>>> Update on development
                 }
             },
             {}

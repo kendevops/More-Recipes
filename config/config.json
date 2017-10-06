@@ -1,23 +1,39 @@
 {
   "development": {
+<<<<<<< HEAD
     "username": "admin",
     "password": "adminadmin",
     "database": "recipe_development",
+=======
+    "username": "postgres",
+    "password": "batch90",
+    "database": "More-Recipe",
+>>>>>>> Update on development
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres"
   },
   "test": {
+<<<<<<< HEAD
     "username": "admin",
     "password": "adminadmin",
+=======
+    "username": "postgres",
+    "password": "batch90",
+>>>>>>> Update on development
     "database": "recipe_test",
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres"
   },
   "production": {
+<<<<<<< HEAD
     "username": "opmmedia",
     "password": "adminadmin",
+=======
+    "username": "admin",
+    "password": "batch90",
+>>>>>>> Update on development
     "database": "recipe_production",
     "host": "127.0.0.1",
     "port": 5432,

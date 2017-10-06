@@ -1,6 +1,7 @@
+'use strict';
 module.exports = {
-  up: (queryInterface, Sequelize) => 
-    queryInterface.createTable('Ingredients', {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.createTable('Ingredients', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -20,15 +21,6 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
-      },
-      recipeId: {
-        type: Sequelize.INTEGER,
-        onDelete: 'CASCADE',
-        references: {
-          model: 'Recipes',
-          key: 'id',
-          as: 'todoId',
-        }
       }
     });
   },

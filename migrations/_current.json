@@ -24,7 +24,7 @@
                     "seqType": "Sequelize.DATE"
                 },
                 "RecipeId": {
-                    "allowNull": false,
+                    "allowNull": true,
                     "references": {
                         "model": "Recipes",
                         "key": "id"
@@ -60,7 +60,11 @@
                     "seqType": "Sequelize.DATE"
                 },
                 "UserId": {
+<<<<<<< HEAD
                     "allowNull": false,
+=======
+                    "allowNull": true,
+>>>>>>> Update on development
                     "references": {
                         "model": "Users",
                         "key": "id"
@@ -93,12 +97,20 @@
                     "seqType": "Sequelize.DATE"
                 },
                 "RecipeId": {
+<<<<<<< HEAD
                     "allowNull": false,
+=======
+                    "allowNull": true,
+>>>>>>> Update on development
                     "references": {
                         "model": "Recipes",
                         "key": "id"
                     },
+<<<<<<< HEAD
                     "onDelete": "CASCADE",
+=======
+                    "onDelete": "SET NULL",
+>>>>>>> Update on development
                     "onUpdate": "CASCADE",
                     "seqType": "Sequelize.INTEGER"
                 }
