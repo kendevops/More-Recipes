@@ -9,7 +9,7 @@
     "JSON2": "^0.1.0",
     "babel-cli": "^6.5.1",
     "babel-preset-env": "1.6.0",
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^5.0.0",
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
